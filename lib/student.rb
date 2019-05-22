@@ -39,6 +39,6 @@ class Student
     sql = <<-SQL
       DROP TABLE students
       SQL
-    DB[:conn].execute(sql, self.name, self.grade)
+    DB[:conn].execute(sql)
   end
 end
